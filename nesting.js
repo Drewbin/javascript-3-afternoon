@@ -50,7 +50,18 @@ var employees = [
     3. Return the updated employee array.
 */
 
-//Code Here
+function employeeUpdater(){
+  for (var i = 0; i < employees.length; i++){
+      for (var j = 0; j < employees.length; j++){
+        if (employees[j] === 'Lorie'){
+          j.department = 'HR'
+        }
+      }
+  }if (employees[i] === 'Theo'){
+    employees.splice(j,1)
+  }
+}
+
 
 
 
@@ -68,7 +79,15 @@ var workplaceAccidents = [12, 56, 44, 3, 29, 56, 56, 3, 7, 12];
     3. Return the updated array.
 */
 
-//Code Here
+function removeDuplicates(){
+  for (let i = workplaceAccidents.length - 1; i >= 0; i--) {
+    for (let j = workplaceAccidents.length - 1; j >= 0; j--) {
+      if (workplaceAccidents[i] === workplaceAccidents[j] && i !== j) {
+        workplaceAccidents.splice(i, 1);
+      }
+    }
+  }return workplaceAccidents
+}
 
 
 
@@ -96,7 +115,7 @@ var cat = {
     2. Assign fluffy2ndFriend the name of Fluffy's 2nd friend.
 */
 
-//Code Here
+
 var grumpyActivity;
 var fluffy2ndFriend;
 
